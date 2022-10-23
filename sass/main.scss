@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "plus jakarta sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 144rem;
+
+  margin: 0;
+}
+
+.nav {
+  padding: 2rem 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+
+  @media only screen and (max-width: 800px) {
+    margin: 0 -15rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin: 0 -13rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+  }
+
+  &__btn {
+    font-size: 18px;
+    font-weight: 700;
+    width: 16.5rem;
+    background-color: #13183f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 5.6rem;
+    border-radius: 3rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-right: -1rem;
+    }
+  }
+}
+.skilled {
+  font-size: 3.6rem;
+  color: #13183f;
+  font-weight: 800;
+}
+.hero {
+  &__container {
+    display: flex;
+
+    @media only screen and (max-width: 599px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__content {
+    position: relative;
+    width: 45rem;
+    margin-left: 14.5rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-left: 3rem;
+      margin-bottom: 12rem;
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 35rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 2rem;
+      width: 40rem;
+      margin-bottom: 15rem;
+    }
+  }
+
+  &__header {
+    font-size: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    color: #13183f;
+    line-height: 1.2;
+
+    @media only screen and (max-width: 900px) {
+      font-size: 4rem;
+      margin-top: 8rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 599px) {
+      width: 35rem;
+
+      margin-top: 4rem;
+    }
+  }
+  &__paragraph {
+    font-size: 1.8rem;
+    color: #83869a;
+    width: 43rem;
+    @media only screen and (max-width: 800px) {
+      font-size: 1.6rem;
+      width: 40rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      // margin-top: -3rem;
+      margin-bottom: -3rem;
+    }
+    @media only screen and (max-width: 599px) {
+      width: 40rem;
+    }
+  }
+
+  &__btn {
+    font-size: 18px;
+    width: 16.5rem;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 5.6rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    margin-top: 6rem;
+    font-weight: 700;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: 599px) {
+      margin-top: 6rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__img img {
+    position: absolute;
+    max-width: 94rem;
+    max-height: 94rem;
+    transform: translateY(-22rem);
+    right: -29rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 5rem;
+      max-width: 72rem;
+      max-height: 72rem;
+    }
+
+    @media only screen and (max-width: 599px) {
+      transform: translateX(-35rem);
+      margin-top: -15rem;
+    }
+  }
+}
+
+.features {
+  margin-top: 7rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 7rem;
+  align-items: center;
+  padding: 16.5rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    padding: 4rem;
+    margin-top: 20rem;
+  }
+
+  @media only screen and (max-width: 699px) {
+    margin-top: 20rem;
+  }
+}
+
+.feature {
+  background: #fff;
+  height: 32.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 4rem;
+    height: 25.9rem;
+  }
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-2rem);
+  }
+  &__text {
+    font-size: 1.8rem;
+    color: #83869a;
+    margin: 3.5rem 0;
+    @media only screen and (max-width: 800px) {
+      margin: 1.5rem 0;
+    }
+  }
+
+  &__text_1 {
+    margin: 4.7rem 3rem;
+
+    @media only screen and (max-width: 800px) {
+      margin: 4.6rem 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin: 3rem;
+      font-size: 3rem;
+    }
+  }
+  &__1 {
+    height: 32.2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 800;
+
+    font-size: 3.2rem;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+    @media only screen and (max-width: 800px) {
+      margin-bottom: 3.7rem;
+      height: 25.9rem;
+    }
+    @media only screen and (max-width: 600px) {
+      height: 16rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    color: #13183f;
+  }
+}
+
+.text-cont {
+  margin-left: 2rem;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+.get-started {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f74780;
+  text-decoration: none;
+}
+.get-started:hover {
+  color: #ffa7c3;
+}
+
+.footer {
+  background-color: #13183f;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  @media only screen and (max-width: 800px) {
+    margin: 0 -14rem;
+    font-size: 2.8rem;
+  }
+
+  &__logo {
+    color: white;
+    font-size: 3.6rem;
+    margin-left: 16.5rem;
+    list-style: none;
+  }
+
+  &__btn {
+    font-size: 18px;
+    font-weight: 700;
+    width: 16.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 5.6rem;
+    border-radius: 3rem;
+    margin-right: 16.5rem;
+    text-decoration: none;
+    background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    @media only screen and (max-width: 800px) {
+      font-size: 1.6rem;
+    }
+  }
+  &__btn:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+}
