@@ -34,10 +34,6 @@ body {
   text-decoration: none;
   list-style: none;
 
-  // @media only screen and (max-width: 800px) {
-  //   margin: 0 -15rem;
-  // }
-
   @media only screen and (max-width: 900px) {
     margin: 0 -13rem;
   }
@@ -56,11 +52,17 @@ body {
     color: white;
     height: 5.6rem;
     border-radius: 3rem;
+    text-decoration: none;
 
     @media only screen and (max-width: 600px) {
       margin-right: -1rem;
     }
   }
+}
+
+.hero__btn:hover {
+  background: #666ca3;
+  cursor: pointer;
 }
 .skilled {
   font-size: 3.6rem;
@@ -161,6 +163,15 @@ body {
       margin-top: 6rem;
       margin-bottom: 4rem;
     }
+
+    &__btn:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.5)
+        ),
+        linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    }
   }
 
   &__img img {
@@ -170,7 +181,7 @@ body {
     transform: translateY(-22rem);
     right: -29rem;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1050px) {
       margin-top: 5rem;
       max-width: 72rem;
       max-height: 72rem;

@@ -11,7 +11,6 @@
 
 html {
   font-size: 62.5%;
-
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -37,7 +36,6 @@ body {
   text-decoration: none;
   list-style: none;
 }
-
 @media only screen and (max-width: 900px) {
   .nav {
     margin: 0 -13rem;
@@ -62,8 +60,8 @@ body {
   }
 }
 
-.nav__btn:hover {
-  background-color: #666ca3;
+.hero__btn:hover {
+  background: #666ca3;
   cursor: pointer;
 }
 
@@ -80,6 +78,7 @@ body {
   .hero__container {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
   }
 }
@@ -96,7 +95,7 @@ body {
     font-size: 4rem;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .hero__content {
     width: 35rem;
   }
@@ -156,13 +155,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 750px) {
-  .hero__paragraph {
-    width: 33rem;
-    font-size: 1.5rem;
-  }
-}
-
 .hero__btn {
   font-size: 18px;
   width: 16.5rem;
@@ -188,8 +180,7 @@ body {
     margin-bottom: 4rem;
   }
 }
-
-.hero__btn:hover {
+.hero__btn__btn:hover {
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.5),
@@ -208,7 +199,6 @@ body {
 @media only screen and (max-width: 1050px) {
   .hero__img img {
     margin-top: 5rem;
-
     max-width: 72rem;
     max-height: 72rem;
   }
@@ -263,7 +253,6 @@ body {
     height: 25.9rem;
   }
 }
-
 .feature__icon {
   width: 4.5rem;
   height: 4.5rem;
@@ -307,12 +296,11 @@ body {
     height: 25.9rem;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   .feature__1 {
     height: 16rem;
   }
 }
-
 .feature__heading {
   font-size: 2.4rem;
   color: #13183f;
